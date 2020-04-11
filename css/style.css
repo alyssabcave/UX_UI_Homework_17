@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+header{
+    display: inline-block;
+    background-color: #014040;
+    opacity: 70%;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    font-family: 'Yeseva One', cursive;
+
+}
+
+.name{
+    color:#D8977F;
+    font-size: 30px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+nav{
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    left:0;
+    background-color: #014040;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: inline-block;
+}
+
+nav a {
+    color: #D8977F;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.hero-image{
+    background-image: <images/hero.png>;
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: #D8977F;
+    height: auto;
+    margin-top: 200px;
+}
+
+h1{
+    font-size: 24px;
+}
+
+p{
+    margin-top: -17px;
+    font-size: 20px;
+}
