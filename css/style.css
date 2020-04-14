@@ -1,29 +1,24 @@
-body {
+
+body{
+    margin:0;
+    padding:0;
+}
+
+/*Navigation Styles*/
+
+.nav-container {
+    width: 100%;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    display: inline-block;
-}
-
-header{
-    display: inline-block;
-    background-color: #014040;
-    opacity: 70%;
-    position: fixed;
-    z-index: 999;
-    width: 100%;
+    height: 40px;
+    
     font-family: 'Yeseva One', cursive;
-
+    z-index: 999;
 }
 
 .name{
     color:#D8977F;
     font-size: 30px;
-    display: inline-block;
     text-align: left;
     margin-bottom: 1em;
     margin-left: 1em;
@@ -31,11 +26,11 @@ header{
 }
 
 nav{
-    position: absolute;
+    position: relative;
     text-align: right;
-    top: 100%;
-    left:0;
-    background-color: #014040;
+    padding: 0;
+    margin: 0;
+    
     width: 100%;
 }
 
@@ -60,32 +55,149 @@ nav a {
 }
 
 nav a:hover{
-    color: white;
+    color: #014040;
+}
+
+/*Hero Image Styles*/
+
+.hero-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: #014040;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
 }
 
 .hero-image{
-    background-image: <images/hero.png>;
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    justify-content: center;
+    width: 40%;
 }
-
 .hero-text{
-    text-align: center;
-    position: absolute;
-    width: 100%;
+    height: 600px;
     color: #D8977F;
-    height: auto;
-    margin-top: 200px;
-}
-
-h1{
     font-size: 24px;
+    font-family: 'Lora', serif;
+    text-align: right;
+    justify-content: center;
 }
 
-p{
-    margin-top: -17px;
+/*Case Study Styles*/
+
+.my-work{
+    margin-top:100px;
+    text-align: center;
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    color: #D8977F;
+}
+
+.case-study{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.mojo, .epa {
+    top: 50px;
+    left: 128px;
+    width: 80%;
+    position: relative;
+    height: 372px;
+    background: #7AB8BF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.mojo{
+    position:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    padding-top: 20px;
+}
+
+.case-study-text-header{
+    color: #025373;
+    font-family: 'Yeseva One', cursive;
+    font-size: 30px;
+}
+
+.case-study-text{
+    color: #025373;
+    font-family: 'Lora', serif;
     font-size: 20px;
 }
+
+.read-more-mojo{
+    background-color:#025373;
+    border: 1px #025373 solid;
+    color: #7AB8BF;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    padding:15px;
+    height:15%;
+    border-radius: 20px;
+}
+
+.read-more-epa{
+    background-color:#025373;
+    border: 1px #025373 solid;
+    color: #7AB8BF;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    padding:15px;
+    height:15%;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.epa-image{
+    margin-top: 15px;
+}
+
+
+.epa{
+    position:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    margin-top: 90px;
+}
+
+.footer{
+  margin-top: 90px;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  height: 100px;
+  
+}
+
+/*Footer Styles*/
+
+.footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100px;
+    border-top: 3px solid #025373;
+  }
+  
+  .footer a {
+    padding: 20px 40px;
+    font-family: 'Lora', serif;
+    text-decoration: none;
+    color: #025373;
+  }
+
+  .footer a:hover{
+      color:#D8977F;
+  }
+  
